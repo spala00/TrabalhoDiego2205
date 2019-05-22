@@ -1,0 +1,186 @@
+/* reset básico para todos os tipos de navegadores*/
+* {
+    margin: 100;
+    padding: 00;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/* conteiner */
+.container  {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30%;
+    padding: 0 20px;
+    font-family: Arial;
+    font-size: 16px;
+    border-top: 1px solid grey;
+    xborder-bottom: 1px solid grey;
+    box-shadow: 0px 5px 5px  rgba(0, 0, 0, 0.1);
+    background:cyan;
+}
+    @media (min-width: 1170px) {
+        .container {
+            max-width: 1170px;
+            padding: 0;
+        }
+    }
+
+/* linha */
+.row {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+    .row:before,
+    .row:after {
+        content: "";
+        display: table;
+    }
+    .row:after {
+        clear: both;
+    }
+
+/* colunas */
+.col {
+    display: inline-block;
+    vertical-align: top;
+    min-height: 1px;
+    padding-left: 25px;
+    padding-right: 35px;
+    width: 100%;
+    margin-right: -4px;
+    *zoom: 1;
+    *display: inline;
+}
+
+.col-5 {
+    display: inline-block;
+    vertical-align: top;
+    min-height: 1px;
+    padding-left: 4px;
+    padding-right: -1px;
+    width: 99.9%;
+    margin-right: -7.8px;
+    *zoom: 0;
+    *display: inline;
+    
+    
+}
+
+    /* tres colunas */
+    @media (min-width: 728px) {
+        .col-3 {
+            width: 33.3%;
+        }
+    }
+
+    /* tres colunas */
+    @media (min-width: 728px) {
+        .col-4 {
+            width: 33.3333%;
+        }
+    }
+
+/* Colunas */
+
+.lay1 {
+    
+    padding: 10px;
+    text-align: left;
+    margin: 2px 0;
+    color:blue;
+    font-size: 12px;
+    font-weight:bold;   
+}
+
+.lay2 {
+    padding: 12px;
+    margin: 2px 0;
+    color: white;
+    xdisplay: flex;
+   
+    background: blue;
+    height: 33px;
+    font-size: 8px;
+    padding-right: 220px;
+    text-align: center;
+}
+
+.lay3 {
+     
+    padding: 7.5px;
+    padding-right: 35px;
+    text-align: right;
+    margin: 2px -1px;
+    word-spacing: 20px;
+    background: blue; 
+    margin-right: -2px;
+    color: white;
+    
+        
+}
+
+.lay4 {
+  
+    padding: 0px;
+    text-align: right;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight:bold;
+    color: blue; 
+       
+}
+
+.lay5 {
+  
+    padding: 10px;
+    text-align: left;
+    font-family: Arial;
+    font-size: 12px;
+    text-decoration: black;
+    margin: 2px 19px;
+       
+}
+
+/* Buscar */
+
+#divBusca{
+  background-color:#E0EEEE;
+  border:solid 2px turquoise;
+  border-radius:10px;
+  width:180px;
+  height:32px;
+  float:left;
+  transform: translate(0,-50%);
+  display: flex;
+  
+  
+}
+ 
+#txtBusca{
+  float:left;
+  background-color:transparent;
+  padding-left:7px; 
+  font-size:12px;
+  border:none;
+  height:30px;
+  width:190px;
+  transform: translate(20,-80%);
+}
+ 
+#btnBusca{
+  border:none;
+  float:right;
+  height:29px;
+  border-radius:2px 2px 2px 2px;
+  width:105px;
+  font-weight:bold;
+  background: turquoise;
+  font-size:16px;
+  transform: translate(-80,-100%);
+  flex-flow: row wrap;
+  text-align: center;
+  
+}
